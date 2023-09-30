@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="container">
+          <nav class="page-header__navigation">
+            <a class="logo logo--dark" href="./index.html"
+              ><span class="logo--colored">Web</span>Studio</a
+            >
+            <button
+              data-menu-open
+              class="menu-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
+              <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                <use href="./images/icons.svg#icon-menu_24px" class="menu-button__menu-icon"></use>
+              </svg>
+            </button>
+            <div data-menu class="menu-container" id="menu-container">
+              <button
+                data-menu-close
+                class="menu-button menu-button--close"
+                type="button"
+                aria-controls="menu-container"
+              >
+                <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                  <use
+                    href="./images/icons.svg#icon-close_24px"
+                    class="menu-button__colse-icon"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="page-header__nav-list">
+                <li class="page-header__nav-line">
+                  <a href="./index.html" class="page-header__nav-link">Studio</a>
+                </li>
+                <li class="page-header__nav-line">
+                  <a
+                    href="./portfolio.html"
+                    class="page-header__nav-link page-header__nav-link--active"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="page-header__nav-line">
+                  <a href="#" class="page-header__nav-link">Contacts</a>
+                </li>
+              </ul>
+              <div class="menu-bottom-container">
+                <ul class="contacts">
+                  <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link"> +38 096 111 11 11</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="social-menu">
+                  <li class="social-menu__item">
+                    <a href="#" class="social-menu__link">Instagram</a>
+                  </li>
+                  <li class="social-menu__item">
+                    <a href="#" class="social-menu__link">Twitter</a>
+                  </li>
+                  <li class="social-menu__item">
+                    <a href="#" class="social-menu__link">Facebook</a>
+                  </li>
+                  <li class="social-menu__item">
+                    <a href="#" class="social-menu__link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="regular-menu-container">
+              <ul class="page-header__nav-list">
+                <li class="page-header__nav-line">
+                  <a href="./index.html" class="page-header__nav-link">Studio</a>
+                </li>
+                <li class="page-header__nav-line">
+                  <a
+                    href="./portfolio.html"
+                    class="page-header__nav-link page-header__nav-link--active"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="page-header__nav-line">
+                  <a href="#" class="page-header__nav-link">Contacts</a>
+                </li>
+              </ul>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link">
+                    <svg width="16" height="12" class="contacts__icon">
+                      <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link">
+                    <svg width="10" height="16" class="contacts__icon">
+                      <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="works section">
+          <div class="container">
+            <h1 class="visually-hidden">Navigation buttons</h1>
+            <ul class="buttons">
+              <li class="buttons__item">
+                <button class="buttons__button buttons__button--active" type="button">All</button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__button" type="button">Web sites</button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__button" type="button">Applications</button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__button" type="button">Design</button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__button" type="button">Marketing</button>
+              </li>
+            </ul>
+            <h2 class="visually-hidden">Projects</h2>
+            <ul class="projects">
+              <li class="projects__item">
+                <a class="projects__link" href="#">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj1.webp     450w,
+                          ./images/mobile/webp/prj1@2x.webp  900w,
+                          ./images/tablet/webp/prj1.webp     354w,
+                          ./images/tablet/webp/prj1@2x.webp  708w,
+                          ./images/desktop/webp/prj1.webp    370w,
+                          ./images/desktop/webp/prj1@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj1.jpg     450w,
+                          ./images/mobile/prj1@2x.jpg  900w,
+                          ./images/tablet/prj1.jpg     354w,
+                          ./images/tablet/prj1@2x.jpg  708w,
+                          ./images/desktop/prj1.jpg    370w,
+                          ./images/desktop/prj1@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/techno.jpg"
+                        alt="technocrack"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Techkryk</h3>
+                    <p class="projects__type">Web site</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj2.webp     450w,
+                          ./images/mobile/webp/prj2@2x.webp  900w,
+                          ./images/tablet/webp/prj2.webp     354w,
+                          ./images/tablet/webp/prj2@2x.webp  708w,
+                          ./images/desktop/webp/prj2.webp    370w,
+                          ./images/desktop/webp/prj2@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj2.jpg     450w,
+                          ./images/mobile/prj2@2x.jpg  900w,
+                          ./images/tablet/prj2.jpg     354w,
+                          ./images/tablet/prj2@2x.jpg  708w,
+                          ./images/desktop/prj2.jpg    370w,
+                          ./images/desktop/prj2@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/poster.jpg"
+                        alt="poster"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Poster New Orlean vs Golden Star</h3>
+                    <p class="projects__type">Design</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj3.webp     450w,
+                          ./images/mobile/webp/prj3@2x.webp  900w,
+                          ./images/tablet/webp/prj3.webp     354w,
+                          ./images/tablet/webp/prj3@2x.webp  708w,
+                          ./images/desktop/webp/prj3.webp    370w,
+                          ./images/desktop/webp/prj3@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj3.jpg     450w,
+                          ./images/mobile/prj3@2x.jpg  900w,
+                          ./images/tablet/prj3.jpg     354w,
+                          ./images/tablet/prj3@2x.jpg  708w,
+                          ./images/desktop/prj3.jpg    370w,
+                          ./images/desktop/prj3@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/seafood.jpg"
+                        alt="seafood"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Restaurant Seafood</h3>
+                    <p class="projects__type">Application</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj4.webp     450w,
+                          ./images/mobile/webp/prj4@2x.webp  900w,
+                          ./images/tablet/webp/prj4.webp     354w,
+                          ./images/tablet/webp/prj4@2x.webp  708w,
+                          ./images/desktop/webp/prj4.webp    370w,
+                          ./images/desktop/webp/prj4@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj4.jpg     450w,
+                          ./images/mobile/prj4@2x.jpg  900w,
+                          ./images/tablet/prj4.jpg     354w,
+                          ./images/tablet/prj4@2x.jpg  708w,
+                          ./images/desktop/prj4.jpg    370w,
+                          ./images/desktop/prj4@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/prime.jpg"
+                        alt="prime"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Project Prime</h3>
+                    <p class="projects__type">Marketing</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj5.webp     450w,
+                          ./images/mobile/webp/prj5@2x.webp  900w,
+                          ./images/tablet/webp/prj5.webp     354w,
+                          ./images/tablet/webp/prj5@2x.webp  708w,
+                          ./images/desktop/webp/prj5.webp    370w,
+                          ./images/desktop/webp/prj5@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj5.jpg     450w,
+                          ./images/mobile/prj5@2x.jpg  900w,
+                          ./images/tablet/prj5.jpg     354w,
+                          ./images/tablet/prj5@2x.jpg  708w,
+                          ./images/desktop/prj5.jpg    370w,
+                          ./images/desktop/prj5@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/boxes.jpg"
+                        alt="boxes"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Project Boxes</h3>
+                    <p class="projects__type">Application</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj6.webp     450w,
+                          ./images/mobile/webp/prj6@2x.webp  900w,
+                          ./images/tablet/webp/prj6.webp     354w,
+                          ./images/tablet/webp/prj6@2x.webp  708w,
+                          ./images/desktop/webp/prj6.webp    370w,
+                          ./images/desktop/webp/prj6@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj6.jpg     450w,
+                          ./images/mobile/prj6@2x.jpg  900w,
+                          ./images/tablet/prj6.jpg     354w,
+                          ./images/tablet/prj6@2x.jpg  708w,
+                          ./images/desktop/prj6.jpg    370w,
+                          ./images/desktop/prj6@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/inspiration.jpg"
+                        alt="image"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Inspiration has no Borders</h3>
+                    <p class="projects__type">Web site</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj7.webp     450w,
+                          ./images/mobile/webp/prj7@2x.webp  900w,
+                          ./images/tablet/webp/prj7.webp     354w,
+                          ./images/tablet/webp/prj7@2x.webp  708w,
+                          ./images/desktop/webp/prj7.webp    370w,
+                          ./images/desktop/webp/prj7@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj7.jpg     450w,
+                          ./images/mobile/prj7@2x.jpg  900w,
+                          ./images/tablet/prj7.jpg     354w,
+                          ./images/tablet/prj7@2x.jpg  708w,
+                          ./images/desktop/prj7.jpg    370w,
+                          ./images/desktop/prj7@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/edition.jpg"
+                        alt="image"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Edition Limited Edition</h3>
+                    <p class="projects__type">Design</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj8.webp     450w,
+                          ./images/mobile/webp/prj8@2x.webp  900w,
+                          ./images/tablet/webp/prj8.webp     354w,
+                          ./images/tablet/webp/prj8@2x.webp  708w,
+                          ./images/desktop/webp/prj8.webp    370w,
+                          ./images/desktop/webp/prj8@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj8.jpg     450w,
+                          ./images/mobile/prj8@2x.jpg  900w,
+                          ./images/tablet/prj8.jpg     354w,
+                          ./images/tablet/prj8@2x.jpg  708w,
+                          ./images/desktop/prj8.jpg    370w,
+                          ./images/desktop/prj8@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/lab.jpg"
+                        alt="image"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Project LAB</h3>
+                    <p class="projects__type">Marketing</p>
+                  </div>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">
+                  <div class="projects__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mobile/webp/prj9.webp     450w,
+                          ./images/mobile/webp/prj9@2x.webp  900w,
+                          ./images/tablet/webp/prj9.webp     354w,
+                          ./images/tablet/webp/prj9@2x.webp  708w,
+                          ./images/desktop/webp/prj9.webp    370w,
+                          ./images/desktop/webp/prj9@2x.webp 740w
+                        "
+                        type="image/webp"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                      <img
+                        srcset="
+                          ./images/mobile/prj9.jpg     450w,
+                          ./images/mobile/prj9@2x.jpg  900w,
+                          ./images/tablet/prj9.jpg     354w,
+                          ./images/tablet/prj9@2x.jpg  708w,
+                          ./images/desktop/prj9.jpg    370w,
+                          ./images/desktop/prj9@2x.jpg 740w
+                        "
+                        class="projects__img"
+                        src="./images/growing.jpg"
+                        alt="image"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      />
+                    </picture>
+                    <div class="projects__overlay">
+                      <p class="projects__overlay-text">
+                        The resource offers complex sentences with different levels of functionality
+                        and services.All this will allow the visitor to receive comprehensive
+                        information about company or private person.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="projects__text">
+                    <h3 class="projects__title">Growing Business</h3>
+                    <p class="projects__type">Application</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="bottom-part">
+            <div class="footer-container">
+              <div class="address-part">
+                <a class="logo logo--light" href="./index.html"
+                  ><span class="logo--colored">Web</span>Studio</a
+                >
+                <address class="address">
+                  <ul class="address__list">
+                    <li class="address__item">
+                      <a
+                        class="address__map"
+                        href="https://goo.gl/maps/neRJqiE3Unt3BaTm8"
+                        target="_blank"
+                        rel="noopener nofollow noreferrer"
+                        >Kyiv, Ave. Lesya Ukrainka, 26</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address__item">
+                      <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+              <div class="join">
+                <h2 class="join__title">Join</h2>
+                <ul class="socials-list">
+                  <li class="socials-list__item">
+                    <a href="#" class="join__social-link socials-list__link">
+                      <svg width="20" height="20" class="join__icon">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-list__item">
+                    <a href="#" class="join__social-link socials-list__link">
+                      <svg width="20" height="20" class="join__icon">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-list__item">
+                    <a href="#" class="join__social-link socials-list__link">
+                      <svg width="20" height="20" class="join__icon">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-list__item">
+                    <a href="#" class="join__social-link socials-list__link">
+                      <svg width="20" height="20" class="join__icon">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-part">
+              <h2 class="form-part__title">Subscribe to the newsletter</h2>
+              <form class="form">
+                <input class="form__mail-input" type="email" placeholder="E-mail" name="email" />
+                <button type="submit" class="form__subscribe-btn">
+                  <span class="form__button-title">Subscribe</span>
+                  <svg width="24" height="24" class="form__btn-icon">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/menu-button.js"></script>
+  </body>
+</html>

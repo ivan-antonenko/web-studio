@@ -1,0 +1,73 @@
+.team {
+  background-color: $team-bckg;
+  @extend %section;
+}
+.team__list {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.team__img {
+  display: block;
+  margin: 0 auto;
+}
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $team-item-bckgd;
+  text-align: center;
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.team__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  margin: 0 0 10px 0;
+}
+.team__expertise {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.team__social-link {
+  background-color: $social-link-light;
+}
+.team__social-icon {
+  fill: $social;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .team__social-link:hover &,
+  .team__social-link:focus & {
+    fill: $social-link-light;
+  }
+}
